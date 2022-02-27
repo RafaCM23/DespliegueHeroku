@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/formulario.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container text-center">
+    <div class="row cabecera">
+        <div class="col-sm-2">
+            <button class="btn btn-lg"  onclick="history.back()"><i class="fa fa-undo"></i> Volver</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-lg" onclick="window.location.href='/seleccion'"><i class="fa fa-home"></i> Home</button>
+        </div>
+        <div class="col-sm-3 text-center">
+            <button class="btn btn-lg" onclick="window.location.href='/catalogo'"><i class="fa fa-cart-arrow-down"></i> Catalogo</button>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-lg" onclick="window.location.href='/mispedidos'"><i class="fa fa-bars"></i> Mis Pedidos</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-lg" onclick="window.location.href='/invalidate'"><i class="fa fa-times-circle"></i> Logout</button>
+        </div>
+    </div>
+    <form action="#" th:action="@{/catalogo/nuevoPedido}" th:object="${cantidades}" method="post" > 
+        <div class="row text-center">
+            <div class="card col-sm-3">
+                <img class="card-img-top imagen" src="/imagenes/steamgift.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Steam 25€</h5>
+                   
+                    <input type="number" name="cant1" id="cant1" min="0" max="20" value="0" th:field="*{cant1}">
+                  </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top imagen" src="/imagenes/amazongift.png" >
+                <div class="card-body">
+                    <h5 class="card-title">Amazon 25€</h5>
+                 
+                    <input type="number" name="cant2" id="cant2" min="0" max="20" value="0" th:field="*{cant2}">
+                  </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top imagen" src="/imagenes/googleplaygift.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Google Play 25€</h5>
+               
+                    <input type="number" name="cant3" id="cant3" min="0" max="20" value="0" th:field="*{cant3}">
+                  </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top imagen" src="/imagenes/xboxgift.png">
+                <div class="card-body">
+                    <h5 class="card-title">Xbox Store 25€</h5>
+                    
+                    <input type="number" name="cant4" id="cant4" min="0" max="20" value="0" th:field="*{cant4}">
+                  </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top imagen" src="/imagenes/nintendogift.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Nintendo eShop 25€</h5>
+           
+                    <input type="number" name="cant5" id="cant5" min="0" max="20" value="0" th:field="*{cant5}">
+                  </div>
+            </div>
+            <div class="card col-sm-3">
+                <img class="card-img-top imagen" src="/imagenes/playgift.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title">PlayStation Store 25€</h5>
+                    
+                    <input type="number" name="cant6" id="cant6" min="0" max="20" value="0" th:field="*{cant6}">
+                  </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center boton">
+                <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+        </div>
+        
+
+		</form>
+	</div>
+   
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

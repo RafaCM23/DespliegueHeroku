@@ -1,0 +1,31 @@
+.principal {
+	box-shadow: 8px 8px 15px 10px rgba(41, 41, 41, 0.738);
+	background-color: white;
+	margin: 0.5em;
+	margin-top: 2em;
+}
+
+body{
+    background-color: #EE7B30;
+}
+.producto{
+	margin: 1em;
+}
+label{
+text-transform: uppercase;
+margin-left: 10%;
+}
+
+img{
+	width: 25px;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+

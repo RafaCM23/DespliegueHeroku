@@ -1,0 +1,29 @@
+.principal {
+	box-shadow: 8px 8px 15px 10px rgba(41, 41, 41, 0.738);
+	background-color: white;
+	margin: 5em;
+}
+
+body{
+    background-color: #EE7B30;
+}
+.pedidos{
+	padding: 1em;
+}
+.pedido{
+	margin-top: 1em;
+	padding: 1em;
+}
+.btn-lg{
+    
+    border: none; 
+    color: white;
+    padding: 12px 16px;
+    font-size: 30px; 
+    cursor: pointer; 
+    
+}
+
+.btn-lg:hover {
+    background-color: RoyalBlue;
+  }
